@@ -1,0 +1,101 @@
+
+<html>
+<head>
+  <meta charset=utf-8 />
+    
+  <title>Mappa attori</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet'/>
+  <!-- fonts -->
+  <link href="css/normalize.css" rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link href="css/stile_mappa.css" rel='stylesheet' type='text/css'/>
+  <link href="css/custom_markercluster.css" rel='stylesheet' type='text/css'/>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'/>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'/>
+
+</head>
+
+<body>
+  <!--markercluster plugin-->
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet'/>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Mappa</a>
+      </div>
+      <button type="submit" id ="closeList" class="btn btn-default navbar-btn btnlist">Hide List</button>
+    </div>
+  </nav>
+
+  
+  
+
+  <div class="row">
+
+  <div id="list-box">
+      <div id="list"></div>
+  </div>
+
+    <div class="col-md-8 col-lg-8">
+      <div id='map'> 
+
+<!--      filter menu not implemented yet   
+      
+          <nav class='menu-ui'>
+          <a href='#' class='active' data-filter='all'>Show all</a>
+          <a href='#' data-filter='cat1'>category 1</a>
+          <a href='#' data-filter='cat2'>category 2</a>
+          <a href='#' data-filter='cat3'>category 3</a>
+        </nav>  -->
+
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-4">
+      <div id='descrizione-attore'>
+          <p>Click on the marker of a stakeholder for display description and related cases.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+    <footer id="footer">
+      <div class="container">
+        <p class="text-muted">Last update: January, 2015</p>
+        <a href='https://www.mapbox.com/about/maps/' target='_blank' class="text-muted">Maps &copy; Mapbox &copy; OpenStreetMap</a>
+      </div>
+    </footer>
+
+  <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+  <script src="js/data_attori.js"></script>  
+  <script src="js/attori_design.js"></script>  
+  <script src="js/contenthover-plugin.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script>
+    $( "#closeList" ).click(function() {
+      $( "#list" ).slideToggle( "slow" );
+        var $this = $(this);
+        $this.toggleClass('btnlist');
+        if($this.hasClass('btnlist')){
+        $this.text('Hide List');     
+        } else {
+       $this.text('Show List');
+      }
+    });
+  </script>
+
+
+</body>
+</html>
