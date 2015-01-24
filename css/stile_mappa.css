@@ -73,6 +73,7 @@ p {
     padding:0; 
     width:100%;
     height: 100%;
+    border-right: 1px solid #4c4c4c;
 } 
 
 #descrizione-attore{
@@ -119,42 +120,37 @@ p {
 .stakeholder{
     width: 100%;
     height: 100%;
+    margin: 0;
     padding-left: 1em;
     padding-bottom: 0.5em;
-    padding-right: 0.5em;
+    padding-right: 1em;
     padding-top: 0.5em;
     overflow-y: scroll;
-
-
 }
 
-.stakeholder div {
-    width: 90%;
-    padding-bottom: 1em;
-    float: left;
-    clear: both;
-    background-color:transparent;
-
+.stakeholder img:last-child {
+    padding-bottom: 20em;
 }
 
 .stakeholder img{
     height: auto;
     width: 100%;
-    margin: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 0em;
 }
 
 .copertina {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
+    padding-bottom: 3em;
+    font-size: 0.8em;
     line-height: 1.5em;
     letter-spacing: 0.02em;
     border-bottom: 1px solid #4c4c4c;
 }
 
-.copertina h2 {
+.copertina h2,
+.stakeholder h2,
+.copertina h4{
     font-family: "Montserrat";
     font-weight: 700;
     display: block;
@@ -177,50 +173,15 @@ p {
     color: black;
 }
 
-.copertina img{
-    padding: 0;
-    margin: 0;
-}
 
 /* style contenthover */
 
-.contenthover{
-    padding: 2em;
-}
+.contenthover { padding:20px 20px 10px 20px; }
+.contenthover, .contenthover h3, .contenthover a { color:#fff; }
+.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+.contenthover a.link { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.contenthover a.link:hover { background:#34742d }
 
-.contenthover h4{
-    color: #ffffff;
-}
-
-.contenthover p{
-    color: #ffffff;
-    font-size: 1em;
-    line-height: 1.2em;
-    font-weight: 500;
-}
-
-.contenthover .link{
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.contenthover a.link{
-    display:block; 
-    float:left; 
-    padding:5px 10px; 
-    background:#6666ff; 
-    color:#fff; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    border-radius: 4px; }
-}
-
-.contenthover a.link:hover{
-    background:#000080; 
-    color: yellow;
-}
 
 /* style list */
 #list-box{
