@@ -1,7 +1,7 @@
 ///////////////////////////// map /////////////////////////////////////
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiZnJhbmNlc2NvbGVvbmkiLCJhIjoiTmFHRUZQSSJ9.JbWzjBi74MpgDpIIUEHHtQ';
-var map = L.mapbox.map('map', 'francescoleoni.k8e0g5f0',{ zoomControl:false, maxZoom:10, attributionControl: false}).setView([34, -37], 3);
+var map = L.mapbox.map('map', 'francescoleoni.k8e0g5f0',{ zoomControl:false, maxZoom:15, attributionControl: false}).setView([34, -37], 3);
 
 // new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
 

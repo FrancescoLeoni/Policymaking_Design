@@ -128,16 +128,17 @@ p {
     overflow-y: scroll;
 }
 
-.stakeholder img:last-child {
-    padding-bottom: 20em;
+.stakeholder div:last-child {
+    padding-bottom: 10em;
 }
 
 .stakeholder img{
     height: auto;
     width: 100%;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
     margin: 0em;
+    border-top: 1px dotted #4c4c4c;
 }
 
 .copertina {
@@ -145,7 +146,6 @@ p {
     font-size: 0.8em;
     line-height: 1.5em;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid #4c4c4c;
 }
 
 .copertina h2,
@@ -173,6 +173,18 @@ p {
     color: black;
 }
 
+.caption{
+    color: black;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    padding-bottom: 2em;
+    margin: 0;
+}
+
+.caption h6{
+    font-weight: bold;
+    font-style: underline;
+}
 
 /* style contenthover */
 
@@ -214,7 +226,6 @@ p {
     color: #333333;
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
-
 }
 
 #list .item small { color:#888; }

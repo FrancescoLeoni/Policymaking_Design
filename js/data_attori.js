@@ -10,7 +10,7 @@ var geoJsonFeature = {
             title: 'Mindlab',
             page: 'mind-lab.html',
             'marker-color': '#000000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -25,7 +25,7 @@ var geoJsonFeature = {
             title: 'DESIS Lab',
             page: 'desis.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -40,7 +40,7 @@ var geoJsonFeature = {
             title: 'DEeP',
             page: 'deep_project.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -55,7 +55,7 @@ var geoJsonFeature = {
             title: 'SEE Platform',
             page: 'see_platform.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -68,9 +68,9 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'La 27e Règion',
-            page: '27eme_region.html',
+            page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -83,9 +83,9 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'SILK Kent',
-            page: 'silk_kent.html',
+            page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -98,9 +98,9 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'The Policy Lab',
-            page: 'policy_lab.html',
+            page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -113,9 +113,9 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'IDEO',
-            page: 'ideo.html',
+            page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -128,9 +128,9 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'Civic Data Design Lab',
-            page: 'civicdata_designlab.html',
+            page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -145,7 +145,7 @@ var geoJsonFeature = {
             title: 'Macro Connections',
             page: 'macro_connections.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -158,9 +158,10 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'mySociety Ltd',
+            description:'not available yet',
             page: 'mysocietyltd.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -173,9 +174,10 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'UN Global Pulse Jakarta',
-            page: 'global_pulse_jakarta.html',
+            description:'not available yet',
+            page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -188,10 +190,10 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title:'The Innovation Policy Platform',
-            description:'innovationpolicyplatform.org',
+            description:'not available yet',
             page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -204,10 +206,10 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title:'The Public Policy Lab',
-            description:'@publicpolicylab',
+            description:'not available yet',
             page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
@@ -219,16 +221,95 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title:'NYU Wagner',
-            description:'@publicpolicylab',
+            description:'not available',
             page:'not_available.html',
             'marker-color': '#800000',
-            zoom: 10
+            zoom: 15
         },
         geometry: {
             type: 'Point',
             coordinates: [-73.986770, 40.704688]
         }
     },
+    ////////// stakeholder data
+    {
+        type: 'Feature',
+        properties: {
+            title:'Shift Design',
+            description:'not available',
+            page:'not_available.html',
+            'marker-color': '#800000',
+            zoom: 15
+        },
+        geometry: {
+            type: 'Point',
+            coordinates: [-0.102005, 51.521527]
+        }
+    },
+    ////////// stakeholder data
+    {
+        type: 'Feature',
+        properties: {
+            title:'Startup Policy Lab',
+            description:'not available',
+            page:'not_available.html',
+            'marker-color': '#800000',
+            zoom: 15
+        },
+        geometry: {
+            type: 'Point',
+            coordinates: [-122.415112, 37.774527]
+        }
+    },
+    ////////// stakeholder data
+    {
+        type: 'Feature',
+        properties: {
+            title:'Milano School - Urban Policy Lab',
+            description:'not available',
+            page:'not_available.html',
+            'marker-color': '#800000',
+            zoom: 15
+        },
+        geometry: {
+            type: 'Point',
+            coordinates: [-73.994261, 40.735796]
+        }
+    },
+   ////////// stakeholder data
+    {
+        type: 'Feature',
+        properties: {
+            title:'Civic Systems Lab',
+            description:'not available',
+            page:'not_available.html',
+            'marker-color': '#800000',
+            zoom: 15
+        },
+        geometry: {
+            type: 'Point',
+            coordinates: [-0.131624, 51.508039]
+        }
+    },
+
+   ////////// stakeholder data
+    {
+        type: 'Feature',
+        properties: {
+            title:'100 Resilient Cities',
+            description:'not available',
+            page:'not_available.html',
+            'marker-color': '#800000',
+            zoom: 15
+        },
+        geometry: {
+            type: 'Point',
+            coordinates: [-73.983395, 40.751010]
+        }
+    },
+
+
+
 
 
     ]
