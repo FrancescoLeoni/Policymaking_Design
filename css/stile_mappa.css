@@ -2,14 +2,20 @@
 
 
 /* general settings -----------------------*/
+@font-face {
+  font-family: 'Akkur';
+  src: url('../fonts/Akkur');
+  font-style:   normal;
+  font-stretch: normal;
+}
+
 
 html {
     margin: 0 auto;
     height: 100%;
-    font-family: "Open Sans", sans-serif !important;
+    font-family: 'Source Sans Pro', sans-serif;
     -webkit-text-size-adjust: 100% !important;
     -ms-text-size-adjust: 100% !important;
-    overflow-x: hidden;
 }
 
 body { 
@@ -44,17 +50,47 @@ p {
 
 .navbar,
 .navbar-default{
+    position:relative;
     margin: 0;
-    height: 5%;
+    height: 150px;
     clear: both;
 }
 
-.row{
+.navbar .navbar-brand {
+ padding-left: 30px;
+}
+
+.navbar .navbar-brand:hover {
+  opacity:0.6;
+}
+
+.navbar .navbar-nav li a {
+  vertical-align: bottom;
+}
+
+.navbar .navbar-nav li a:hover {
+  text-decoration: underline;
+  background-color: #f9f9f9;
+}
+
+.row-mappa{
     width: 100%;
-    height: 91%;
+    height: 400px;
     margin: 0 auto;
     padding:0;
-    overflow: hidden;
+    background-color: transparent;
+
+}
+
+.row-list{
+    position:relative;
+    clear:both;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding:0;
+    background-color: transparent;
+
 }
 
 .col-md-2,
@@ -65,6 +101,7 @@ p {
     padding: 0;
     max-height:700px;
 }
+
 /* main content row */
 
 
@@ -72,12 +109,13 @@ p {
     margin:0 auto;
     padding:0; 
     width:100%;
-    height: 100%;
+    height: 800px;
     border-right: 1px solid #4c4c4c;
+    background-color: transparent;
 } 
 
-#descrizione-attore{
-    background-color: #cccccc;
+.descrizione-attore{
+    background-color:#B3B3B3;
     float: left;
     position: relative;
     font-size: 1em !important;
@@ -87,6 +125,62 @@ p {
     width: 100%;
     height: auto;
 }
+
+.descrizione-attore div{
+    display:block;
+    float:left;
+    clear:both;
+    width:100%;
+    padding:0.2em;
+    border-top: 0.5px solid darkgrey;
+    border-bottom: 0.5px solid darkgrey;
+}
+
+.nero{
+    color:black;
+}
+
+.highlight{
+    color:#FF8000;
+}
+
+.highlight:hover{
+    color:black;
+}
+
+.intro{
+    margin-top: 30px;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    padding-left: 20px;
+    color:#4C4C4C;
+    padding-bottom:5em;
+
+}
+
+.schema{
+    margin-top: 30px;    
+    padding-left: 30px;
+    width:80%;
+    height:auto;
+
+}
+
+.row-tools{
+    padding-left: 50px;
+    padding-bottom: 45px;
+    border-bottom: 0.5px solid darkgrey;
+}
+
+#cover{
+    width: 100%;
+    height:auto;
+    max-width:500px;
+    max-height:300px;
+    overflow:hidden;
+    background:darkgrey;
+}
+
 
 /* scrollabar style */
 
@@ -184,7 +278,7 @@ p {
 .caption h6{
     font-weight: bold;
     font-style: underline;
-}
+} */
 
 /* style contenthover */
 
@@ -197,14 +291,11 @@ p {
 
 /* style list */
 #list-box{
-    position: absolute;
-    height:600px;
-    left:0em;
-    top: 50px;
-    max-width: 20%;
-    min-width: 15%;
-    max-height:700px;
-    z-index: 20;
+    position: relative;
+    float:left;
+    width: 100%;
+    height:800px;
+    overflow-y: scroll;
 }
 
 #list{
@@ -212,20 +303,22 @@ p {
     margin: 0px;
     padding:2em;
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow-y: scroll;
-    position: relative;
     float: left;
 }
 
 #list .item {
-    display:block;
+    display:inline-block;
     border-bottom:1px solid #eee;
     padding:10px;
+    width:150px;
     text-decoration:none;
     color: #333333;
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
+    float: left;
+    clear:right;
 }
 
 #list .item small { color:#888; }

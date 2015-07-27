@@ -3,7 +3,7 @@
 <head>
   <meta charset=utf-8 />
     
-  <title>Start page</title>
+  <title>Analytical frameworks for cases studies</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
 
   <!-- fonts -->
@@ -17,9 +17,6 @@
 </head>
 
 <body>
-  <!--markercluster plugin-->
-  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet'/>
 
     <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
     <div class="container">
@@ -51,20 +48,32 @@
     </div>
     </nav>
 
-    <div class="container">
-        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-8 col-lg-offset-1 col-lg-8 intro">
-        <h2 class="nero"><b>Hi, there!</b></h2>
-        <p>This website hosts the MA thesis in Communication Design of Francesco Leoni, held at Politecnico di Milano. It is intended to work as the repository of the thesis research, which has explored the emerging field of intersection between design and policymaking in the public sector. Our questions were the following:</br><a href="#" class="highlight"><b>What is the design driven innovation? What are its core values when it comes to the policy project?</b></a></br>
-        Finally, as an additional experimental work, <a href="tool_vis.html" class="highlight"><b>we tried to figured out what role data visualization would play in this scenario</b></a>, as the field will evolve. 
-       </p>
-     </div>
+<!--      </div>
+      <button type="submit" id ="closeList" class="btn btn-default navbar-btn btnlist">Hide List</button>
+    </div> -->
+  
+    <div class="row-tools">
+
+      <div class="col-md-4 col-lg-4">
+        <h2 class="nero"><b>Analytical framework</b></h2>
+        <h4 class="nero">Mapping cases studies by socio-economic sectors</h4>
+        <p> The following framework provides an interpretation of the cases studies found during the research (also displayed in the map). This comparison shows how the majority of design innovation for policymaking comes from the public sector (and therefore is subdue to government agenda), but there are also notable organizations working in the field from privates companies and universities.</p>
+      </div>
+
+      <div class="col-md-8 col-lg-8">
+        <div id = 'mainContainer'></div>
+        <!-- Load D3.js library -->
+      </div>
+      <div id='nome-scheda'><span>Nome Scheda</span></div>
+
+
+
     </div>
 
 
-             
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/riccardoscalco/textures/master/textures.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="./lib/script.js" charset="utf-8" type="text/javascript"></script>     
 
 </body>
 </html>

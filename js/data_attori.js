@@ -8,7 +8,11 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'Mindlab',
-            page: 'mind-lab.html',
+            location:'Copenhagen (DK)',
+            section:'Public Sector',
+            images:['./img/mindlab1.jpg','./img/mindlab2.jpg'],
+            descrizione:'MindLab is a cross-governmental innovation unit which involves citizens and businesses in creating new solutions for society. We are also a physical space – a neutral zone for inspiring creativity, innovation and collaboration.',
+            link:'mind-lab.dk',
             'marker-color': '#000000',
             zoom: 15
         },
@@ -38,7 +42,6 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'DEeP',
-            page: 'deep_project.html',
             'marker-color': '#800000',
             zoom: 15
         },
@@ -53,7 +56,6 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'SEE Platform',
-            page: 'see_platform.html',
             'marker-color': '#800000',
             zoom: 15
         },
@@ -143,7 +145,7 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'Macro Connections',
-            page: 'macro_connections.html',
+            page: 'macroconnections.html',
             'marker-color': '#800000',
             zoom: 15
         },
@@ -158,6 +160,7 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'mySociety Ltd',
+            section:'Private Sector',
             description:'not available yet',
             page: 'mysocietyltd.html',
             'marker-color': '#800000',
@@ -174,6 +177,7 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title: 'UN Global Pulse Jakarta',
+            section:'Third Sector',
             description:'not available yet',
             page:'not_available.html',
             'marker-color': '#800000',
@@ -221,6 +225,7 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title:'NYU Wagner',
+            section:'Education',
             description:'not available',
             page:'not_available.html',
             'marker-color': '#800000',
@@ -236,6 +241,7 @@ var geoJsonFeature = {
         type: 'Feature',
         properties: {
             title:'Shift Design',
+            section:'Private Sector',
             description:'not available',
             page:'not_available.html',
             'marker-color': '#800000',
